@@ -8,6 +8,7 @@ public class Constantes {
     public static final int SUBTRACAO = 2;
     public static final int MULTIPLICACAO = 3;
     public static final int DIVISAO = 4;
+    public static final int POTENCIA = 5;
     public static final int NULO = 0;
     public static final int[] NUMERICOS = {
         R.id.button_0,
@@ -27,6 +28,7 @@ public class Constantes {
         R.id.button_multiplicacao,
         R.id.button_soma,
         R.id.button_subtracao,
+        R.id.button_potencia,
         R.id.button_calcular
     };
 

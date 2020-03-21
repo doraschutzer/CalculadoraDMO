@@ -3,7 +3,6 @@ package br.edu.ifsp.arq.dmos5_2020s1.calculadoradmo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button[] numericosButton;
     private Button[] operadoresButton;
     private Button apagarButton;
+    private Button limparButton;
 
     private Calculadora mCalculadora;
 
@@ -36,13 +36,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         resultado = findViewById(R.id.textview_saida_resultado);
         apagarButton = findViewById(R.id.button_apagar);
+        limparButton = findViewById(R.id.button_limpar);
 
-        //Definindo o OnClickListern do botão
+        //Definindo o OnClickListern do botão.
         apagarButton.setOnClickListener(this);
+        limparButton.setOnClickListener(this);
         setBotoesNumericos();
         setBotoesOperadores();
 
-        // Instanciando a Calculadora
+        // Instanciando a Calculadora.
         mCalculadora = mCalculadora.getInstance();
     }
 
@@ -50,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if(v == apagarButton){
             apagar();
+        } else if ( v == limparButton ) {
+            limpar();
         }
     }
 
@@ -116,6 +120,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } case "/": {
                 valorOperador = Constantes.DIVISAO;
                 break;
+            } case "^": {
+                valorOperador = Constantes.POTENCIA;
+                break;
             } case "=": {
                 valorOperador = Constantes.RESULTADO;
                 break;
@@ -153,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String operador = getValorButton((Button)v);
         int valorOperador = getValorOperador(operador);
 
-        // Transformando a string entrada em float
+        // Transformando a string entrada em float.
         try{
             numero = Float.parseFloat(entrada);
         }catch (NumberFormatException ex){
@@ -161,7 +168,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             numero = getNumeroSeExcecao();
         }
 
-        // Imprimindo o resultado
+        // Imprimindo o resultado.
         float saida = mCalculadora.calcular(valorOperador,numero);
         setHint(String.valueOf(saida));
 
@@ -173,5 +180,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setHint("0.0");
         mCalculadora.c();
         flgNovoNumero = true;
+    }
+
+    void limpar() {
+        if (flgOperacao == Constantes.RESULTADO) {
+            apagar();
+        } else {
+            setHint("0.0");
+            flgNovoNumero = true;
+        }
     }
 }

@@ -12,10 +12,12 @@
     <string name="botao_8">8</string>
     <string name="botao_9">9</string>
     <string name="botao_apagar">C</string>
+    <string name="botao_limpar">CE</string>
     <string name="botao_multiplicacao">X</string>
     <string name="botao_divisao">/</string>
     <string name="botao_subtracao">-</string>
     <string name="botao_soma">+</string>
+    <string name="botao_potencia">^</string>
     <string name="botao_ponto">.</string>
     <string name="botao_calcular">=</string>
 </resources>

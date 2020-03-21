@@ -32,6 +32,36 @@
         android:textStyle="bold" />
 
     <Button
+        android:id="@+id/button_limpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_saida_resultado"
+        android:layout_toRightOf="@id/button_apagar"
+        android:layout_marginTop="20dp"
+        android:height="88dp"
+        android:text="@string/botao_limpar"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="#F64949"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_potencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_saida_resultado"
+        android:layout_toRightOf="@id/button_limpar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:height="88dp"
+        android:text="@string/botao_potencia"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/button_divisao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
