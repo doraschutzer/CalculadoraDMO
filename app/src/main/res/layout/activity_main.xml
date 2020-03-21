@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_saida_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:hint="@string/saida_resultado"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textColor="#838383"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_apagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_saida_resultado"
+        android:layout_marginTop="20dp"
+        android:height="88dp"
+        android:text="@string/botao_apagar"
+        android:layout_marginLeft="15dp"
+        android:textAllCaps="true"
+        android:textColor="#F64949"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_divisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_saida_resultado"
+        android:layout_marginTop="20dp"
+        android:height="88dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/botao_divisao"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_apagar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_7"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_apagar"
+        android:layout_toRightOf="@id/button_7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_8"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_apagar"
+        android:layout_toRightOf="@id/button_8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_9"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_multiplicacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_apagar"
+        android:layout_toRightOf="@id/button_9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_multiplicacao"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_7"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_4"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_7"
+        android:layout_toRightOf="@id/button_4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_5"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_7"
+        android:layout_toRightOf="@id/button_5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_6"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_subtracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_7"
+        android:layout_toRightOf="@id/button_6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="176dp"
+        android:text="@string/botao_subtracao"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_1"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_4"
+        android:layout_toRightOf="@id/button_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_2"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_4"
+        android:layout_toRightOf="@id/button_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_3"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_soma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_1"
+        android:layout_toRightOf="@id/button_calcular"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_soma"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_0"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_ponto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_1"
+        android:layout_toRightOf="@id/button_0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_ponto"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_1"
+        android:layout_toRightOf="@id/button_ponto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:height="88dp"
+        android:text="@string/botao_calcular"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+
